@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Dashboard from "./components/Dashboard";
 
 function App() {
   return (
@@ -8,7 +9,10 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" />
+          <Route path="/" element={<Dashboard />} ></Route>
+          <Route>
+            
+          </Route>
         </Routes>
         <Footer />
       </BrowserRouter>
